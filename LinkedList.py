@@ -135,7 +135,9 @@ class Linked:
 
 
 '''Example:'''
-ll = Linked()
+
+
+'''ll = Linked()
 
 ll.add_tail('Ending Ender')
 ll.add_head('The head')
@@ -153,3 +155,4 @@ ll.print_string()
 ll.remove('Ending Ender')
 ll.print_string()
 #ll.print_string()
+'''
