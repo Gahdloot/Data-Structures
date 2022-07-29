@@ -14,5 +14,25 @@ class Linked_Test(unittest.TestCase):
         self.assertIsNotNone(link.head)
         self.assertIsNotNone(link.tail)
 
+    def test_linked_list_can_be_converted_to_list(self):
+        link = LinkedList.Linked()
+        link.add_head('1st head')
+        link.add_head('2nd head')
+        link.add_head('3rd head')
+        link.add_head('4th head')
+        lenght_of_list = link.lenght_of_list()
+        self.assertEqual(lenght_of_list, 4)
+
+    def test_that_removeMethod_works(self):
+        link = LinkedList.Linked()
+        link.add_head('1st head')
+        link.add_head('2nd head')
+        link.add_head('3rd head')
+        link.add_head('4th head')
+        link.remove('2nd head')
+        lenght_of_list = link.lenght_of_list()
+        self.assertEqual(lenght_of_list, 3)
+
+
 if __name__ == '__main__':
     unittest.main()
