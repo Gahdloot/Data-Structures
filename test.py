@@ -1,6 +1,7 @@
 import unittest
 import LinkedList
 import Stack
+import queue
 
 class Linked_Test(unittest.TestCase):
     def test_linked_head_and_tail_node_is_always_set_at_none(self):
@@ -50,6 +51,12 @@ class test_Stack(unittest.TestCase):
         stack.push('push first data')
         stack.pop()
         self.assertIsNone(stack.peek())
+
+
+class test_queue(unittest.TestCase):
+    def test_queue_is_empty(self):
+        Queue = queue.Queue()
+        self.assertIsNone(Queue.head)
 
 
 
