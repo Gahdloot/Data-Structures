@@ -57,6 +57,15 @@ class test_queue(unittest.TestCase):
     def test_queue_is_empty(self):
         Queue = queue.Queue()
         self.assertIsNone(Queue.head)
+        self.assertIsNone(Queue.tail)
+
+
+    def test_queue_dequeue_and_deque_works(self):
+        Queue = queue.Queue()
+        Queue.enqueue('enqueued data')
+        self.assertIsNotNone(Queue)
+        # Queue.dequeue()
+        # self.assertIsNone()
 
 
 
