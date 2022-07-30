@@ -48,7 +48,7 @@ class test_Stack(unittest.TestCase):
     def test_that_stack_pops(self):
         stack = Stack.Stack()
         stack.push('push first data')
-        stack.pop
+        stack.pop()
         self.assertIsNone(stack.peek())
 
 
