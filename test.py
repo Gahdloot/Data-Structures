@@ -1,5 +1,6 @@
 import unittest
 import LinkedList
+import Stack
 
 class Linked_Test(unittest.TestCase):
     def test_linked_head_and_tail_node_is_always_set_at_none(self):
@@ -32,6 +33,18 @@ class Linked_Test(unittest.TestCase):
         link.remove('2nd head')
         lenght_of_list = link.lenght_of_list()
         self.assertEqual(lenght_of_list, 3)
+
+
+class test_Stack(unittest.TestCase):
+    def test_that_stack_starts_with_none(self):
+        stack = Stack.Stack()
+        self.assertIsNone(stack.peek())
+
+    def test_that_stack_pops(self):
+        stack = Stack.Stack()
+        stack.push('push first data')
+        self.assertIsNotNone(stack.peek())
+
 
 
 if __name__ == '__main__':
