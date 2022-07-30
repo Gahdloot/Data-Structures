@@ -40,10 +40,16 @@ class test_Stack(unittest.TestCase):
         stack = Stack.Stack()
         self.assertIsNone(stack.peek())
 
-    def test_that_stack_pops(self):
+    def test_that_stack_push(self):
         stack = Stack.Stack()
         stack.push('push first data')
         self.assertIsNotNone(stack.peek())
+
+    def test_that_stack_pops(self):
+        stack = Stack.Stack()
+        stack.push('push first data')
+        stack.pop
+        self.assertIsNone(stack.peek())
 
 
 
